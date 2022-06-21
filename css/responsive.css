@@ -1,0 +1,278 @@
+/* container */
+/* small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*med screen*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/*large screen*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* nav section */
+@media (min-width: 992px) {
+    nav .container .show-btn {
+        display: none;
+    }
+    nav .container ul {
+        position: static;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        min-height: auto;
+        background-color: transparent;
+        width: unset;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+    nav .container .close-btn {
+        display: none;
+    }
+    nav .container ul li:first-of-type {
+        margin-top: unset;
+    }
+    nav .container ul li {
+        margin-bottom: unset;
+        transition: unset;
+        -webkit-transition: unset;
+        -moz-transition: unset;
+        -ms-transition: unset;
+        -o-transition: unset;
+        margin-right: 20px;
+    }
+    nav .container ul li:hover {
+        margin-left: unset;
+    }
+    nav .container ul li a {
+        color: #fff;
+        font-size: 16px;
+        transition: var(--transition);
+        -webkit-transition: var(--transition);
+        -moz-transition: var(--transition);
+        -ms-transition: var(--transition);
+        -o-transition: var(--transition);
+    }
+    nav .container ul li a.active {
+        color: var(--main-color);
+    }
+}
+/* start landing section */
+@media (max-width: 991px) {
+    main .content h1 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 990px) {
+    main .content h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 750px) {
+    main .content {
+        max-width: 100%;
+    }
+    main .content h1 {
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+    }
+    main .content p {
+        font-size: 15px;
+    }
+    #next,
+    #prev {
+        display: none;
+    }
+    main .content button {
+        padding: 10px 15px;
+    }
+}
+/* end landing section */
+/* start food news section */
+@media (min-width: 992px) {
+    .food-news .box {
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        -o-transform: translateY(-50px);
+        padding-top: unset;
+        padding-bottom: unset;
+    }
+}
+/* end food news section */
+/* start menu section */
+@media (max-width: 991px) {
+    .menu .menu-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .menu .menu-container .colum .row {
+        margin-bottom: 35px;
+    }
+}
+/* end menu section */
+/* start booking section */
+@media (max-width: 625px) {
+    .booking form .form-control {
+        flex-direction: column;
+    }
+    .booking form .form-control input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .booking form {
+        padding: 72px 30px 72px;
+    }
+    .booking form .inline-form {
+        flex-direction: column;
+    }
+    .booking form .sm-from {
+        width: 100%;
+    }
+    .booking form .sm-from:not(.sm-from:last-of-type) {
+        margin-right: 0;
+    }
+    .booking form .sm-from:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+}
+
+/* end booking section */
+/* start welcome section */
+@media (min-width: 992px) {
+    .welcome {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 991px) {
+    .welcome figure {
+        display: none;
+    }
+}
+/* end welcome section */
+
+/* start footer section */
+@media (max-width: 767px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .mb {
+        margin-bottom: 40px;
+    }
+}
+/* end footer section */
+/* 
+===========================
+========= menu page =======
+===========================
+ */
+
+/* start mains section */
+@media (max-width: 991px) {
+    .mains_menu figure {
+        display: none;
+    }
+    .mains_menu .main_item {
+        flex-basis: 95%;
+        margin: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .mains_menu .main_item .menu-container .colum .row .text {
+        font-size: 12px;
+    }
+}
+@media (max-width: 765px) {
+    .mains_menu .main_item .menu-container {
+        flex-direction: column;
+    }
+    .mains_menu .main_item .menu-container .colum {
+        width: 100%;
+    }
+    .mains_menu .main_item .menu-container .colum .row .text {
+        font-size: 13px;
+    }
+}
+/* start mains section */
+/* start book section */
+.book {
+    background-color: var(--main-color);
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.book .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .book .container {
+        flex-direction: column;
+    }
+    .book .container .text {
+        margin-bottom: 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+.book .container .text {
+    opacity: 1;
+    color: #fff;
+    font-weight: 600;
+}
+.book .container button {
+    font-weight: 600;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    width: fit-content;
+    padding: 11px 23px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.book .container button:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* end book section */
+/* 
+=====================================
+============= blog page ============
+=====================================
+*/
+@media (max-width: 991px) {
+    .blog .container {
+        flex-direction: column;
+    }
+    .blog .container .blog_content,
+    .blog .container aside {
+        width: 100%;
+    }
+}

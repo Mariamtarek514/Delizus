@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delizus</title>
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+<body>
+    <div class="loader__container">
+        <div id="load"></div>
+    </div>
+    <script>
+        // page load animation
+        let loaderContainer = document.querySelector(".loader__container"),
+            load = document.getElementById("load");
+        loaderContainer.style.display = "flex";
+        load.classList.add("loader");
+        setTimeout(() => {
+            loaderContainer.style.display = "none";
+            load.classList.remove("loader");
+        }, 4000);
+    </script>
+    <header>
+        <!-- nav section -->
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" />
+                </div>
+                <button type="button" class="show-btn" id="open-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="list" id="nav-container">
+                    <button type="button" class="close-btn" id="close-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="book.html">book</a></li>
+                    <li><a href="events.html">events</a></li>
+                    <li><a class="active" href="blog.html">blog</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end nav section -->
+    </header>
+    <!-- start landing -->
+    <section class="page_landing blog_page">
+        <div class="landing_contant">
+            <h1>BLOG</h1>
+            <h2>
+                LATEST FROM US
+            </h2>
+        </div>
+    </section>
+    <!-- end landing -->
+    <section class="blog py-4" id="blog">
+        <div class="container">
+            <div class="blog_content">
+                <div class="blog_row">
+                    <figure>
+                        <img src="images/blog_1.jpg" alt="pouring some Coffee">
+                    </figure>
+                    <div class="blog_information">
+                        <div class="number">
+                            <span>26</span>
+                            <strong> F E B</strong>
+                        </div>
+                        <div class="heading">
+                            <h3>5 Powerfull Natural Antibiotics</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_row">
+                    <figure>
+                        <img src="images/blog_2.jpg" alt="burger">
+                    </figure>
+                    <div class="blog_information">
+                        <div class="number">
+                            <span>20</span>
+                            <strong> F E B</strong>
+                        </div>
+                        <div class="heading">
+                            <h3>25 Reasons to Eat Bananas</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_row">
+                    <figure>
+                        <img src="images/blog_3.jpg" alt="food">
+                    </figure>
+                    <div class="blog_information">
+                        <div class="number">
+                            <span>16</span>
+                            <strong> F E B</strong>
+                        </div>
+                        <div class="heading">
+                            <h3>Summer Food and Ingredients Guide</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_row">
+                    <figure>
+                        <img src="images/blog_4.jpg" alt="choclat bar">
+                    </figure>
+                    <div class="blog_information">
+                        <div class="number">
+                            <span>26</span>
+                            <strong> F E B</strong>
+                        </div>
+                        <div class="heading">
+                            <h3>6 Ways to Cook a Roast</h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <div class="posts box">
+                    <h4 class="special_h4">Recent Posts</h4>
+                    <ul>
+                        <li>
+                            <span>22 Jun</span>
+                            <a>5 Powerfull Natural Antibiotics</a>
+                        </li>
+                        <li>
+                            <span>20 Jun</span>
+                            <a>25 Reasons to Eat Bananas</a>
+                        </li>
+                        <li>
+                            <span>12 Jun</span>
+                            <a> Summer Food and Ingredients Guide</a>
+                        </li>
+                        <li>
+                            <span>10 Jun</span>
+                            <a> 6 Ways to Cook a Roast</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="box about">
+                    <h4 class="special_h4">About Us</h4>
+                    <p class="text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni
+                    </p>
+                </div>
+                <div class="box tags">
+                    <h4 class="special_h4">Tags</h4>
+                    <ul>
+                        <li>Art</li>
+                        <li>Application</li>
+                        <li>Design</li>
+                        <li>Entertainment</li>
+                        <li>Internet</li>
+                        <li>Marketing</li>
+                        <li>Multipurpose</li>
+                        <li>Music</li>
+                        <li>Print</li>
+                        <li>Programming</li>
+                        <li>Responsive</li>
+                        <li>Website</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- start footer section -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="copy_right mb">
+                &copy;Copyright 2017 - Delizus by Designesia
+            </div>
+            <figure class="mb">
+                <img src="images/logo.png" alt="logo">
+            </figure>
+            <ul class="social mb">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-skype"></i></li>
+
+            </ul>
+        </div>
+
+    </footer>
+    <!-- end footer section -->
+    <!-- javaScript links -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delizus</title>
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+
+<body>
+    <div class="loader__container">
+        <div id="load"></div>
+    </div>
+    <script>
+        // page load animation
+        let loaderContainer = document.querySelector(".loader__container"),
+            load = document.getElementById("load");
+        loaderContainer.style.display = "flex";
+        load.classList.add("loader");
+        setTimeout(() => {
+            loaderContainer.style.display = "none";
+            load.classList.remove("loader");
+        }, 4000);
+    </script>
+    <header>
+        <!-- nav section -->
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" />
+                </div>
+                <button type="button" class="show-btn" id="open-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="list" id="nav-container">
+                    <button type="button" class="close-btn" id="close-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a class="active" href="book.html">book</a></li>
+                    <li><a href="events.html">events</a></li>
+                    <li><a href="blog.html">blog</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- end nav section -->
+    </header>
+
+    <!-- start landing -->
+    <section class="page_landing book_page">
+        <div class="landing_contant">
+            <h1>BOOK</h1>
+            <h2>
+                MAKE A RESERVATION
+            </h2>
+        </div>
+    </section>
+    <!-- end landing -->
+    <!-- start book opening time -->
+    <section class="book_opening py-4" id="book_opening">
+        <div class="container">
+            <div class="world-wrap">
+                <h2>WE'RE OPEN</h2>
+                <h3 class="italic-text">Everyday!
+                </h3>
+            </div>
+            <div>
+                <p>Monday - Friday</p>
+
+                <strong>08.00 - 21.00</strong>
+            </div>
+            <span class="line"></span>
+            <div>
+                <p> Saturday & Sunday</p>
+
+                <strong>10.00 - 23.00</strong>
+            </div>
+        </div>
+    </section>
+    <!-- end book opening time -->
+    <!-- start booking section -->
+    <section class="booking py-4" id="book">
+        <form>
+            <div class="world-wrap">
+                <h2>BOOK A TABLE</h2>
+                <h3 class="italic-text">Reservation</h3>
+            </div>
+            <div class="inline-form">
+                <input type="text" placeholder="Date" class="sm-from">
+                <input type="text" placeholder="time" class="sm-from">
+                <input type="text" placeholder="person" class="sm-from">
+            </div>
+            <div class="form-control">
+                <input type="text" placeholder="Your name">
+                <input type="email" placeholder="Your email">
+            </div>
+            <textarea placeholder="Your message"></textarea>
+            <input type="submit" value="submit form">
+        </form>
+    </section>
+    <!-- end booking section -->
+    <!-- start footer section -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="copy_right mb">
+                &copy;Copyright 2017 - Delizus by Designesia
+            </div>
+            <figure class="mb">
+                <img src="images/logo.png" alt="logo">
+            </figure>
+            <ul class="social mb">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-skype"></i></li>
+
+            </ul>
+        </div>
+
+    </footer>
+    <!-- end footer section -->
+    <!-- javaScript links -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

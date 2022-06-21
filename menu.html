@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delizus</title>
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+
+<body>
+    <div class="loader__container">
+        <div id="load"></div>
+    </div>
+    <script>
+        // page load animation
+        let loaderContainer = document.querySelector(".loader__container"),
+            load = document.getElementById("load");
+        loaderContainer.style.display = "flex";
+        load.classList.add("loader");
+        setTimeout(() => {
+            loaderContainer.style.display = "none";
+            load.classList.remove("loader");
+        }, 4000);
+    </script>
+    <header>
+        <!-- nav section -->
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" />
+                </div>
+                <button type="button" class="show-btn" id="open-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="list" id="nav-container">
+                    <button type="button" class="close-btn" id="close-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <li><a href="index.html">home</a></li>
+                    <li><a class="active" href="menu.html">menu</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="book.html">book</a></li>
+                    <li><a href="events.html">events</a></li>
+                    <li><a href="blog.html">blog</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- end nav section -->
+    </header>
+    <!-- start landing -->
+    <section class="page_landing menu_page">
+        <div class="landing_contant">
+            <h1>OUR MENU</h1>
+            <h2>
+                FRESH & DELICIOUS
+            </h2>
+        </div>
+    </section>
+    <!-- end landing -->
+    <!-- Start MAINS section -->
+    <div class="mains_menu" id="mains">
+        <div class="mains_contant">
+            <figure class="main_figure"></figure>
+            <div class="main_item">
+                <div class="world-wrap">
+                    <h2>MAINS</h2>
+                    <h3 class="italic-text">Fresh and delicious</h3>
+                </div>
+                <div class="menu-container">
+                    <div class="colum">
+                        <div class="row">
+                            <img src="images/main01.jpg" alt="main dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Chicken Crispy Roll </h3>
+                                    <strong>$66
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/main02.jpg" alt="main dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Baked Crab Cheese </h3>
+                                    <strong>$66
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/main03.jpg" alt="main dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Foie Gras </h3>
+                                    <strong>$66
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="row">
+                            <img src="images/main04.jpg" alt="main dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Cheese Shrimp Roll </h3>
+                                    <strong>$42
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/main05.jpg" alt="main dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Crispy Squid</h3>
+                                    <strong>$54
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/main06.jpg" alt="main dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Roasted Chicken </h3>
+                                    <strong>$55
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end MAINS section -->
+
+    <!-- start starter section -->
+    <div class="mains_menu" id="starter">
+        <div class="mains_contant">
+
+            <div class="main_item">
+                <div class="world-wrap">
+                    <h2>STARTER</h2>
+                    <h3 class="italic-text">Fresh and delicious</h3>
+                </div>
+                <div class="menu-container">
+                    <div class="colum">
+                        <div class="row">
+                            <img src="images/starter01.jpg" alt="starter dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Chicken Soup</h3>
+                                    <strong>$8
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/starter02.jpg" alt="starter dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Polpette </h3>
+                                    <strong>$8
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/starter03.jpg" alt="starter dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Caprino </h3>
+                                    <strong>$8
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="row">
+                            <img src="images/starter04.jpg" alt="starter dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Caprese Salad</h3>
+                                    <strong>$9
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/starter05.jpg" alt="starter dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Waffle</h3>
+                                    <strong>$9
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/starter06.jpg" alt="starter dish">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Calamary </h3>
+                                    <strong>$10
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <figure class="starter_figure"></figure>
+
+        </div>
+    </div>
+    <!-- end starter section -->
+    <!-- start drink section -->
+    <div class="mains_menu" id="drink">
+        <div class="mains_contant">
+            <figure class="drink_figure"></figure>
+            <div class="main_item">
+                <div class="world-wrap">
+                    <h2>DRINKS</h2>
+                    <h3 class="italic-text">Fresh and delicious</h3>
+                </div>
+                <div class="menu-container">
+                    <div class="colum">
+                        <div class="row">
+                            <img src="images/drink01.jpg" alt="drinks">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Limeade </h3>
+                                    <strong>$5
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/drink02.jpg" alt="drinks">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Milk Shake </h3>
+                                    <strong>$5
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/drink03.jpg" alt="drinks">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Hot Tea </h3>
+                                    <strong>$3
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="row">
+                            <img src="images/drink04.jpg" alt="drinks">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Iced Tea</h3>
+                                    <strong>$3
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/drink05.jpg" alt="drinks">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Orange Juice </h3>
+                                    <strong>$3
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="images/drink06.jpg" alt="drinks">
+                            <div class="menu_discription">
+                                <div class="heading">
+                                    <h3>Coffee </h3>
+                                    <strong>$3
+                                    </strong>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end drink section -->
+    <!-- start book section -->
+    <div class="book" id="book">
+        <div class="container">
+            <p class="text">
+                Delicious starts right here. Enjoy the real fresh food by our chef!
+            </p>
+            <button type="button">
+                book now
+            </button>
+        </div>
+    </div>
+    <!-- end book section -->
+    <!-- start footer section -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="copy_right mb">
+                &copy;Copyright 2017 - Delizus by Designesia
+            </div>
+            <figure class="mb">
+                <img src="images/logo.png" alt="logo">
+            </figure>
+            <ul class="social mb">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-skype"></i></li>
+
+            </ul>
+        </div>
+
+    </footer>
+    <!-- end footer section -->
+    <!-- javaScript links -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

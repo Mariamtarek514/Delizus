@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delizus</title>
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+<body>
+    <div class="loader__container">
+        <div id="load"></div>
+    </div>
+    <script>
+        // page load animation
+        let loaderContainer = document.querySelector(".loader__container"),
+            load = document.getElementById("load");
+        loaderContainer.style.display = "flex";
+        load.classList.add("loader");
+        setTimeout(() => {
+            loaderContainer.style.display = "none";
+            load.classList.remove("loader");
+        }, 4000);
+    </script>
+    <header>
+        <!-- nav section -->
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" />
+                </div>
+                <button type="button" class="show-btn" id="open-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="list" id="nav-container">
+                    <button type="button" class="close-btn" id="close-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a class="active" href="about.html">about us</a></li>
+                    <li><a href="book.html">book</a></li>
+                    <li><a href="events.html">events</a></li>
+                    <li><a href="blog.html">blog</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- end nav section -->
+    </header>
+
+    <!-- start landing -->
+    <section class="page_landing about_page">
+        <div class="landing_contant">
+            <h1>ABOUT US</h1>
+            <h2>
+                WHO WE ARE
+            </h2>
+        </div>
+    </section>
+    <!-- end landing -->
+    <!-- start about section 1 -->
+    <section class="welcome" id="about_1">
+        <figure></figure>
+        <div class="welcome_text">
+            <h2>WELCOME TO DELIZUS</h2>
+            <h3 class="italic-text">Who We Are</h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+            </p>
+            <a href="#" class="btn">view menu</a>
+        </div>
+    </section>
+    <!-- end about section 1 -->
+    <!-- start about section 2 -->
+    <section class="welcome" id="about_2">
+
+        <div class="welcome_text">
+            <h2>OUR RESTAURANT</h2>
+            <h3 class="italic-text">Cozy & Romantic</h3>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+            </p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+        <figure></figure>
+    </section>
+    <!-- end about section 2 -->
+    <!-- start team section -->
+    <section class="team py-4" id="team">
+        <div class="world-wrap">
+            <h2>MEET</h2>
+            <h3 class="italic-text">Our Team</h3>
+        </div>
+        <div class="container grid">
+            <div class="team_box">
+                <figure>
+                    <img src="images/team_1.jpg" alt="team">
+                </figure>
+                <div class="team_information">
+                    <div class="info_header">
+                        <h4>Ben Sheridan</h4>
+                        <span class="title">Master Chef</span>
+                    </div>
+                    <p class="text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+            <div class="team_box">
+                <figure>
+                    <img src="images/team_2.jpg" alt="team">
+                </figure>
+                <div class="team_information">
+                    <div class="info_header">
+                        <h4>Sophie Lana</h4>
+                        <span class="title">Senior Chef</span>
+                    </div>
+                    <p class="text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+            <div class="team_box">
+                <figure>
+                    <img src="images/team_3.jpg" alt="team">
+                </figure>
+                <div class="team_information">
+                    <div class="info_header">
+                        <h4>James Hoult</h4>
+                        <span class="title">Guest Chef</span>
+                    </div>
+                    <p class="text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end team section -->
+    <!-- start number section -->
+    <section class="numbers" id="number">
+        <div class="container">
+            <div class="number_container grid_4">
+                <div class="number">
+                    <h3 data-number="835">0</h3>
+                    <strong>Hours of Works</strong>
+                </div>
+                <div class="number">
+                    <h3 data-number="248">0</h3>
+                    <strong>Projects Complete</strong>
+                </div>
+                <div class="number">
+                    <h3 data-number="852">0</h3>
+                    <strong>Slice of Pizza</strong>
+                </div>
+                <div class="number">
+                    <h3 data-number="615">0</h3>
+                    <strong>Cups of Coffee</strong>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- end number section -->
+    <!-- start footer section -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="copy_right mb">
+                &copy;Copyright 2017 - Delizus by Designesia
+            </div>
+            <figure class="mb">
+                <img src="images/logo.png" alt="logo">
+            </figure>
+            <ul class="social mb">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-skype"></i></li>
+
+            </ul>
+        </div>
+
+    </footer>
+    <!-- end footer section -->
+    <!-- javaScript links -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
