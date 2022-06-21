@@ -504,10 +504,6 @@ main .content a:hover {
 } /* end booking section */
 
 /* start event section */
-.event {
-    overflow: hidden;
-}
-
 .event .event_content {
     transition: var(--transition);
     -webkit-transition: var(--transition);
