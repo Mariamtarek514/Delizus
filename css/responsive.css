@@ -111,6 +111,16 @@
         padding-bottom: unset;
     }
 }
+@media(max-width:976px){
+    .food-news .box{
+        padding-bottom:unset;
+    }
+}
+@media(max-width:636px){
+    .food-news .box:not(.box:first-of-type){
+        padding-top:unset;
+    }
+}
 /* end food news section */
 /* start menu section */
 @media (max-width: 991px) {
